@@ -14,6 +14,10 @@ class Application(aiohttp_Application):
         return os.path.join(os.getcwd(), "frontend", "login.html")
 
     @property
+    def path_to_demo_html(self) -> str:
+        return os.path.join(os.getcwd(), "frontend", "demo.html")
+
+    @property
     def path_to_test_html_prompt_for_jpeg(self) -> str:
         return os.path.join(os.getcwd(), "frontend", "detect_for_jpeg.html")
 
